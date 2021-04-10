@@ -9,4 +9,4 @@ This site will house content that may often feel orderless. Generally, it will r
 
 More than anything, it will simply serve as a means of archiving the things that I (as much as there is an "I" to begin with) learn and enjoy so that they can be referenced as time passes. 
 
-<img src="rhizome.png">
+![rhizome](/rhizome.png)
