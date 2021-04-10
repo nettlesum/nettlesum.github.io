@@ -11,7 +11,7 @@ header_pages:
   - about.markdown
 
 # Build settings
-theme: jekyll-theme-console
+remote_theme: nettlesum/jekyll-theme-console
 plugins:
   - jekyll-feed
 
