@@ -1,18 +1,28 @@
-title: 'b2a3e8.github.io'
-description: "A jekyll theme inspired by linux consoles for hackers, developers and script kiddies."
-baseurl: "/jekyll-theme-console-demo-dark"
-url: "https://b2a3e8.github.io"
-
+title: nettlesum
+email: 
+description: >- 
+  Welcome to yet another node in the vast network of prison cells that we call the internet.
+baseurl: "" 
+url: "https://nettlesum.github.io" 
+twitter_username: nettlesum
+github_username:  nettlesum
 header_pages:
-  - index.md
-  - peter.md
-  - about.md
-  - contact.md
-
-style: dark
-
-footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+  - index.markdown
+  - about.markdown
 
 # Build settings
-markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+theme: jekyll-theme-console
+plugins:
+  - jekyll-feed
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
