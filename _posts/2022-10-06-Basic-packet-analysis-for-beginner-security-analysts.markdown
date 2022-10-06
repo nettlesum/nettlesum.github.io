@@ -126,3 +126,7 @@ www[.]ciniholland[.]nl
 **7) What is the domain name that delivered the exploit kit and malware?**
 
 stand[.]trustandprobaterealty[.]com
+
+# Conclusion
+
+I hope that you found something useful in this post and write up. I'll be sure to update this post as my process for analysing these types of files improves and grows in the future. 
