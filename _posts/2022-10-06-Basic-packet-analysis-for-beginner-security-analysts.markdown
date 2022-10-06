@@ -93,6 +93,8 @@ On 2014-11-16 at approximately 02:12 UTC a Windows virtual machine was infected 
 
 ## Answering the exercise questions
 
+Our high-level analysis and deep dive in Wireshark has given us every piece of information needed in order to answer Brad's level one questions for this exercise:
+
 **1) What is the IP address of the Windows VM that gets infected?**
 
 172.16.165.165
