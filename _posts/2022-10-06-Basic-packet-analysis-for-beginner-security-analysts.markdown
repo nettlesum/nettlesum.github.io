@@ -70,6 +70,8 @@ We now have an understanding of what happened, so we can put together an inciden
 >
 >### Indicators of Compromise
 >
+>We were able to identify multiple indiactors of compromise, including details of the domain where the malicious files were downloaded from, the file hashes themselves, and the referring sites and relevant IP addresses.
+>
 >**Details for RIG EK Download(s):**
 >
 >- 37.200.69.143
@@ -81,6 +83,8 @@ We now have an understanding of what happened, so we can put together an inciden
 >- 188.225.73.100 / 24corp-shop[.]com
 >
 >### Malicious Files 
+>
+>We found two malicious files in our investigation, a Java file and a Flash file. Details for both can be found below.
 >
 >**Java File**
 >- MD5: 1E34FDEBBF655CEBEA78B45E43520DDF
