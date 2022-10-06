@@ -32,7 +32,7 @@ From our high-level analysis we know that an exploit kit was likely used to infe
 
 To do this we can Export HTTP objects in Wireshark via **File** > **Export Objects** > **HTTP** and sort by the **Content Type** column to bring application content to the top of the list. 
 
-![A list of exported HTTP objects in Wireshark, including Java, executable and flash files of note.](https://i.imgur.com/Yj0thaz.png)
+![A list of exported HTTP objects in Wireshark, including Java, executable and flash files of note.](/exports.png)
 
 Based on our alerts from Snort, we're particularly curious about the Java file here, but we'll take a sample of each to make sure we're covering all of our bases. 
 
@@ -55,46 +55,45 @@ We now know that the malicious files were delivered from the **stand[.]trustandp
 
 We can identify the source address of these requests as **172.16.165.165**. If we filter for dhcp traffic and open the DHCP Request we can find the MAC Address and host name for the source address, in this case **f0:19:af:02:9b:f1** and **K34EN6W3N-PC** respectively.  
 
-![The MAC address and host name of the infected machine as seen in Wireshark.](https://i.imgur.com/beJm91k.png)
+![The MAC address and host name of the infected machine as seen in Wireshark.](/macandhost.png)
 
 We now have an understanding of what happened, so we can put together an incident report.
 
 ## Incident report
 
-### Executive Summary
-
-On 2014-11-16 at approximately 02:12 UTC a Windows virtual machine was infected by an attacker using the RIG Exploit Kit. 
-
-### Details of Infected Host
-
-- MAC address: f0:19:af:02:9b:f1
-- IP address: 172.16.165.165
-- Host name: K34EN6W3N-PC
-
-### Indicators of Compromise
-
-**Details for RIG EK Download(s):**
-
-- 37.200.69.143
-- stand[.]trustandprobaterealty[.]com
-
-**Sites/Referrers**
-
-- 82.150.140.30 / www[.]ciniholland[.]nl
-- 188.225.73.100 / 24corp-shop[.]com
-
-
-**Malicious Files:**
-
-**Java File**
-- MD5: 1E34FDEBBF655CEBEA78B45E43520DDF
-- File size 10.36 KB (10606 bytes)
-- File type: JAR
-
-**Flash File**
-- MD5: 7B3BAA7D6BB3720F369219789E38D6AB
-- File size: 8.03 KB (8227 bytes)
-- File type:	Flash
+>### Executive Summary
+>
+>On 2014-11-16 at approximately 02:12 UTC a Windows virtual machine was infected by an attacker using the RIG Exploit Kit. 
+>
+>### Details of Infected Host
+>
+>- MAC address: f0:19:af:02:9b:f1
+>- IP address: 172.16.165.165
+>- Host name: K34EN6W3N-PC
+>
+>### Indicators of Compromise
+>
+>**Details for RIG EK Download(s):**
+>
+>- 37.200.69.143
+>- stand[.]trustandprobaterealty[.]com
+>
+>**Sites/Referrers**
+>
+>- 82.150.140.30 / www[.]ciniholland[.]nl
+>- 188.225.73.100 / 24corp-shop[.]com
+>
+>### Malicious Files 
+>
+>**Java File**
+>- MD5: 1E34FDEBBF655CEBEA78B45E43520DDF
+>- File size 10.36 KB (10606 bytes)
+>- File type: JAR
+>
+>**Flash File**
+>- MD5: 7B3BAA7D6BB3720F369219789E38D6AB
+>- File size: 8.03 KB (8227 bytes)
+>- File type:	Flash
 
 ## Answering the exercise questions
 
