@@ -38,9 +38,9 @@ Based on our alerts from Snort, we're particularly curious about the Java file h
 
 In this case, we’ll save a sample of the .jar (Java), .exe (executable) and the .swf (Flash) files to hash and search. Once saved, you can use PowerShell to quickly grab an MD5 hash for each of the files. I’ve renamed the files here for ease of reading:
 
- ```
- get-filehash -a MD5 '.\exe.exe' ; get-filehash -a MD5 '.\jar.jar' ; get-filehash -a MD5 '.\swf.swf'
-  ```
+```
+get-filehash -a MD5 '.\exe.exe' ; get-filehash -a MD5 '.\jar.jar' ; get-filehash -a MD5 '.\swf.swf'
+```
 
 The hashes that we get for each are:
 
@@ -48,6 +48,7 @@ The hashes that we get for each are:
  - **Flash File:** 7B3BAA7D6BB3720F369219789E38D6AB
  - **Executable File:** D276C86DCDBCDB6B74EE02496BC90D98
 
+\
 Upon checking each of these hashes on VirusTotal we find that the Java and Flash files are known to be malicious, while the executable file does not raise any flags.
 
 We now know that the malicious files were delivered from the **stand[.]trustandprobaterealty[.]com** domain. Reviewing the HTTP traffic in the capture, we can find the IP for that domain, which is **37.200.69.143**. If we open the HTTP section in the packet details section for this entry we can follow the referrers back. The referrer for this entry is **24corp-shop[.]com**, checking it's referrer, we find **www[.]ciniholland[.]nl**.
