@@ -38,9 +38,9 @@ Based on our alerts from Snort, we're particularly curious about the Java file h
 
 In this case, we’ll save a sample of the .jar (Java), .exe (executable) and the .swf (Flash) files to hash and search. Once saved, you can use PowerShell to quickly grab an MD5 hash for each of the files. I’ve renamed the files here for ease of reading:
 
-```
-get-filehash -a MD5 '.\exe.exe' ; get-filehash -a MD5 '.\jar.jar' ; get-filehash -a MD5 '.\swf.swf'
-```
+
+*get-filehash -a MD5 '.\exe.exe' ; get-filehash -a MD5 '.\jar.jar' ; get-filehash -a MD5 '.\swf.swf'*
+
 
 The hashes that we get for each are:
 
