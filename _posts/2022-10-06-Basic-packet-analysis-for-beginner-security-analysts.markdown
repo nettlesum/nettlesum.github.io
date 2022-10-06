@@ -5,6 +5,8 @@ date:   2022-10-05 12:04:00
 categories: wireshark
 ---
 
+# Basic packet analysis for beginner security analysts
+
 I thought I’d try and brush up on my packet analysis skills by looking at an older exercise from Brad Duncan’s Malware Traffic Analysis blog. Specifically, we’re looking at [a traffic analysis exercise from the 16th of November, 2014](https://www.malware-traffic-analysis.net/2014/11/16/index.html) (so it’s quite dated now).
 
 Before looking to answer the questions Brad put together I want to try and understand what’s going on in the packet capture.
