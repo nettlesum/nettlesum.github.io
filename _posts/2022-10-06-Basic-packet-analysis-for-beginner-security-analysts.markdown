@@ -13,7 +13,7 @@ Before looking to answer the questions Brad put together I want to try and under
 
 ## Initial high-level analysis
 
-For me, the best place to start is dropping the packet capture into VirusTotal and getting an idea of whether any alerts were triggered. You can find these on the Details page.
+For me, the best place to start is dropping the packet capture into VirusTotal and getting an idea of whether any alerts were triggered. You can find these on the Details page. In this case, we can see a number of alerts from both Snort and Surikata. 
 
 These Snort alerts in particular stand out:
 
