@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Basic packet analysis for beginner security analysts"
-date:   2022-10-06 12:04:00
+date:   2022-10-05 12:04:00
 categories: wireshark
 ---
 
