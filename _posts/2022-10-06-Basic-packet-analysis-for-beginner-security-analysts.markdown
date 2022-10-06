@@ -44,9 +44,9 @@ In this case, we’ll save a sample of the .jar (Java), .exe (executable) and th
 
 The hashes that we get for each are:
 
- - **Java File:** 1E34FDEBBF655CEBEA78B45E43520DDF
- - **Flash File:** 7B3BAA7D6BB3720F369219789E38D6AB
- - **Executable File:** D276C86DCDBCDB6B74EE02496BC90D98
+>**Java File:** 1E34FDEBBF655CEBEA78B45E43520DDF
+>**Flash File:** 7B3BAA7D6BB3720F369219789E38D6AB
+>**Executable File:** D276C86DCDBCDB6B74EE02496BC90D98
 
 \
 Upon checking each of these hashes on VirusTotal we find that the Java and Flash files are known to be malicious, while the executable file does not raise any flags.
