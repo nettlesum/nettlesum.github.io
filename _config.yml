@@ -13,6 +13,7 @@ header_pages:
 
 # Build settings
 remote_theme: nettlesum/jekyll-theme-console
+style: light 
 plugins:
   - jekyll-feed
 
