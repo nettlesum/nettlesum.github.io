@@ -6,7 +6,7 @@ baseurl: ""
 url: "https://nettlesum.github.io" 
 twitter_username: nettlesum
 github_username:  nettlesum
-footer: 'This sites theme is a fork of <a href=https://github.com/b2a3e8/jekyll-theme-console>b2a3e8/jekyll-theme-console</a>.'
+footer: 'This site uses a fork of <a href=https://github.com/b2a3e8/jekyll-theme-console>b2a3e8/jekyll-theme-console</a> as it's theme.'
 header_pages:
   - index.markdown
   - about.markdown
