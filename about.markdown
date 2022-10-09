@@ -5,8 +5,10 @@ permalink: /about/
 ---
 ***Time moves in one direction, memory in another.***
 
-This site will house content that may often feel orderless. Generally, it will relate to networking, security, systems internals and occasionally things as disparit and foreign as fiction, poetry and musical and political theory.
+I am a long-time technologist currently working for a software company, with an interest to expand and grow my knowledge in the areas of networking and security: specifically malware analysis and threat intelligence. Additionally, I hope to learn more about programming at both a low and high level.
 
-More than anything, it will simply serve as a means of archiving the things that I (as much as there is an "I" to begin with) learn and enjoy so that they can be referenced as time passes. 
+This site serves as a place for me to post about the different topics and exercises that I work on and learn about, so that I can reference them in the future, or that they might be useful to someone else in a similar position as I. 
+
+You can find me on Twitter via [@nettlesum](https://twitter.com/nettlesum). 
 
 ![rhizome](/rhizome.png)
