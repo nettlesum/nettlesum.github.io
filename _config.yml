@@ -6,7 +6,7 @@ baseurl: ""
 url: "https://nettlesum.github.io" 
 twitter_username: nettlesum
 github_username:  nettlesum
-footer: '© There is no copyright but the right to copy'
+footer: ''
 header_pages:
   - index.markdown
   - about.markdown
