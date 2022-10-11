@@ -11,4 +11,4 @@ This site serves as a place for me to post about the different topics and exerci
 
 You can find me on Twitter via [@nettlesum](https://twitter.com/nettlesum). 
 
-![rhizome](/rhizome.png)
+![rhizome](/assets/main/rhizome.png)
