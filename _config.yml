@@ -15,6 +15,7 @@ header_pages:
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # exclude:
 #   - .sass-cache/
