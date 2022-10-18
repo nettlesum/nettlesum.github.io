@@ -6,14 +6,13 @@ baseurl: ""
 url: "https://nettlesum.github.io" 
 twitter_username: nettlesum
 github_username:  nettlesum
-footer: 'This site uses a fork of the <a href=https://github.com/b2a3e8/jekyll-theme-console>b2a3e8/jekyll-theme-console</a> theme.'
+footer: 'This site is powered by <a href=https://jekyllrb.com/>Jekyll</a>, and uses the <a href=https://github.com/mmistakes/minimal-mistakes>minimal-mistakes</a> theme.'
 header_pages:
   - index.markdown
   - about.markdown
 
 # Build settings
-remote_theme: nettlesum/jekyll-theme-console
-style: light 
+remote_theme: remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
 
