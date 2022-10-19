@@ -118,7 +118,7 @@ author:
       url: "https://nettlesum.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/nettlesum"
+      url: "https://twitter.com/nettlesum"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
