@@ -1,17 +1,17 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
-This is an example page that uses the `page` layout.
+***Time moves in one direction, memory in another.***
 
-Visit the [Homepage]({{ site.baseurl | prepend: site.url }}/) for documentation on installation, setup, how-tos, features, and more about this Jekyll theme.
+You can find me on Twitter [@nettlesum](https://twitter.com/nettlesum). 
+
+![rhizome](/assets/main/rhizome.png)
 
 ---
 
-Email us at [hi@oinam.com](mailto:hi@oinam.com?subject=Oinam Jekyll).\
 Find us at
-[oinam.com](https://oinam.com),
-[Twitter](https://twitter.com/oinam),
-[Instagram](https://www.instagram.com/oinam/).
+[nettlesum.com](https://nettlesum.com),
+[twitter](https://twitter.com/nettlesum),
