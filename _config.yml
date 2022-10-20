@@ -70,3 +70,7 @@ exclude:
   - README.*
   - server
   - vendor/
+  
+  - name: Jekyll Deploy Action
+  uses: jeffreytse/jekyll-deploy-action@v0.4.0
+
