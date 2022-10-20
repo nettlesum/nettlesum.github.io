@@ -10,7 +10,7 @@ footer:
 
 footer_custom: 'This site is powered by Jekyll, running the <a href="https://github.com/oinam/oinam-jekyll">Oinam</a> theme.'
 
-remote_theme: nettlesum/oinam-jekyll
+remote_theme: oinam/oinam-jekyll
 layout:
   theme: nord
   theme_highlighter: nord
