@@ -1,74 +1,31 @@
 title: nettlesum
-description: time moves in one direction, memory in another.
-url: https://nettlesum.github.io
-baseurl: 
+author:
+  name: nettlesum
+  email: 
+description: > # this means to ignore newlines until "show_excerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: false # set to true to show excerpts on the homepage
 
-# footer
-footer:
-  credit: false
-  custom: true
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
 
-footer_custom: 'This site is powered by Jekyll, running the <a href="https://github.com/oinam/oinam-jekyll">Oinam</a> theme.'
+  # generate social links in footer
+  social_links:
+    twitter: nettlesum
+    github:  nettlesum
 
-remote_theme: oinam/oinam-jekyll
-layout:
-  theme: nord
-  theme_highlighter: nord
-  theme_switch: true
-  home_posts_no: 6
-  home_postheader_title: 'Recent posts'
-  home_postmeta_title: 'View all'
-  posts_home: /blog/
-  link_new_tab: true # should external links open in a new tab (true) or in the current tab (false)
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - about.md
 
-# styles
-# include only the styles you want [true | false]
-styles:
-  font_family: sans
-  forms: true
-  syntax_highlighter: true
-  
-markdown: kramdown
-highlighter: rouge
-
-permalink: pretty
-permalink: /:title/
-
-sass:
-  style: compressed
-  sourcemap: never
+# Build settings
+theme: minima
 
 plugins:
- - jekyll-optional-front-matter
- - jekyll-titles-from-headings
- - jekyll-remote-theme
-
-defaults:
-  - scope:
-      path: '_posts'
-      type: 'posts'
-    values:
-      layout: 'post'
-      permalink: '/:year/:title/'
-
-titles_from_headings:
-  enabled: true
-  strip_title: true
-  collections: true
-
-exclude:
-  - .jekyll-cache/
-  - .sass-cache/
-  - Gemfile
-  - Gemfile.lock
-  - gemfiles/
-  - LICENSE
-  - netlify.toml
-  - node_modules/
-  - oinam-jekyll-*.*
-  - oinam-jekyll.gemspec
-  - README.*
-  - server
-  - vendor/
-
-
+ - jekyll-feed
+ - jekyll-seo-tag
