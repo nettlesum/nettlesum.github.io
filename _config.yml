@@ -2,7 +2,7 @@ title: nettlesum
 author:
   name: nettlesum
   email: 
-description: > Welcome to yet another node in the vast network of prison cells that we call the internet.
+description: Welcome to yet another node in the vast network of prison cells that we call the internet.
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -19,6 +19,7 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
  - about.md
+ - index.md
 
 # Build settings
 theme: minima
