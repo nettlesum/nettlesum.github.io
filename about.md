@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-**Nettlesome** [ net-l-suhm ]  
+**nettlesome** [ net-l-suhm ]  
 *adjective*
 1. causing irritation, vexation, or annoyance:  
 *to cope with a nettlesome situation.*
