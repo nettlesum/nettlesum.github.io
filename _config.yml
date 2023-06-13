@@ -1,27 +1,28 @@
 title: nettlesum
-author: 
-  name: nettlesum
-  email: NULL
-description: 
-show_excerpts: true
-
-# Date format
-minima:
-  date_format: "%Y-%m-%d %H:%M"
-
-  # generate social links in footer
-  social_links:
-    twitter: nettlesum
-    github:  nettlesum
-
+email: 
+description: >- 
+  Welcome to yet another node in the vast network of prison cells that we call the internet.
+baseurl: "" 
+url: "https://nettlesum.github.io" 
+twitter_username: nettlesum
+github_username:  nettlesum
+footer: 'This site uses a fork of the <a href=https://github.com/b2a3e8/jekyll-theme-console>b2a3e8/jekyll-theme-console</a> theme.'
 header_pages:
- - about.md
- - index.md
-
+  - index.markdown
+  - about.markdown
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
-
+remote_theme: nettlesum/jekyll-theme-console
+style: light 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-remote-theme
+  - jekyll-feed
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
