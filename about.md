@@ -8,6 +8,7 @@ permalink: /about/
 *adjective*
 1. causing irritation, vexation, or annoyance:  
 *to cope with a nettlesome situation.*  
+
 [//]: # (end markdown list)  
   
 <br> 
