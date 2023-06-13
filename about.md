@@ -11,5 +11,3 @@ You can find me on Twitter as [@nettlesum](https://twitter.com/nettlesum).
 ![rhizome](/assets/main/rhizome.png)
 
 ***Time moves in one direction, memory in another***
-
----
