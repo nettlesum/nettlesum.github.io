@@ -19,7 +19,7 @@ header_pages:
  - index.md
 
 # Build settings
-theme: minima
+remote_theme: no-style-please
 
 plugins:
  - jekyll-feed
