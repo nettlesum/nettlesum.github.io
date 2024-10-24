@@ -8,6 +8,8 @@ I am a technologist currently working in a Customer Operations role for a softwa
 
 This blog serves as a node to host writing and learnings on security research and the philosophies and ideas that surround it.
 
+[You can view my Github here.](https://github.com/nettlesum)
+
 ![rhizome](/assets/main/rhizome.png)
 
 ***Time moves in one direction, memory in another***
