@@ -15,6 +15,11 @@ remote_theme: nettlesum/jekyll-theme-console
 style: light 
 plugins:
   - jekyll-feed
+
+markdown: kramdown
+highlighter: rouge
+    input: GFM
+
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
