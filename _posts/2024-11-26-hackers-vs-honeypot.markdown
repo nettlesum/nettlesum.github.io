@@ -7,6 +7,25 @@ categories:
 summary: "A 5-day deployment of a Cowrie honeypot reveals insights into attacker behaviour, including brute force logins, cryptocurrency mining reconnaissance, and valuable Indicators of Compromise (IOCs)."
 ---
 
+<style>
+/* Custom CSS for this post */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+</style>
+
 Every day, tens of thousands of brute force attacks are launched against servers worldwide, testing the limits of their defences. For those of us new to cybersecurity, these attacks aren't just statistics: they’re a chance to learn. Setting up a honeypot is an invaluable way to go about this.
 
 Honeypots are valuable tools for both experienced security professionals and those, like me, who are new to the field. For seasoned experts, they provide nuanced insights into attacker behaviour and emerging threats, helping refine defensive strategies. For newcomers, honeypots offer a hands-on opportunity to bridge the gap between theoretical knowledge and real-world application in defensive security.
@@ -29,7 +48,7 @@ Key metrics from this period include:
 - **Total commands executed:** 248
 - **Potential brute force IPs:** _30*_
 
-_* Brute force IPs were identified using a script that flagged IPs exceeding a threshold of 10 login attempts within a 5-minute window. These thresholds were designed to mimic realistic brute force activity and help isolate aggressive attackers._
+<br>_* Brute force IPs were identified using a script that flagged IPs exceeding a threshold of 10 login attempts within a 5-minute window. These thresholds were designed to mimic realistic brute force activity and help isolate aggressive attackers._
 
 The 7,586 failed logins during a 5-day period underscore the relentless nature of brute force attacks, often automated and distributed across botnets. Similarly, the 106 unique IPs observed suggest a global distribution of sources, displaying just how broad of an attack surface exposed systems can face.
 
@@ -51,7 +70,7 @@ This table lists the most frequently attempted username and password combination
 | root 	| admin       	| 43   	| pi   	| raspberry   	| 25   	|
 | root 	| 123456      	| 41   	| system   | OkwKcECs8qJP2Z  | 41   	|
 
-When looking at both succesful and unsuccesful login attempts we can demonstrate the sheer volume of login attempts quite effectively.
+<br>When looking at both succesful and unsuccesful login attempts we can demonstrate the sheer volume of login attempts quite effectively.
 
 ![Succesful vs Unsuccesful Login Attempts](/assets/hackers-vs-honeypot/loginattempts.png)
 
@@ -79,7 +98,7 @@ While the honeypot was active, 248 commands were executed by attackers who were 
 
 This table lists the most frequently executed commands, categorised by type and purpose
 
-| Command 1                                            	| Count | Command 2                 	| Count |
+| Command                                            	| Count | Command                 	| Count |
 |----------------------------------------------------------|-------|-------------------------------|-------|
 | `uname -s -v -n -r -m`                               	| 97	| `uname -a`                	| 6 	|
 | `apt`                                                	| 14	| `cat /proc/cpuinfo`       	| 6 	|
@@ -196,7 +215,7 @@ This sequence of events allows us to paint a picture of the attackers activity w
 4. **SSH Client Details**:
    - **Version**: `SSH-2.0-libssh2_1.11.0`
 
-These Indicators of Compromise (IOCs) can be integrated into SIEM tools to enhance detection capabilities or shared with threat intelligence networks to bolster community defences. For instance, monitoring for commands like `ps | grep '[Mm]iner'`` could help detect crypto miner-related activity across other systems.
+<br>These Indicators of Compromise (IOCs) can be integrated into SIEM tools to enhance detection capabilities or shared with threat intelligence networks to bolster community defences. For instance, monitoring for commands like `ps | grep '[Mm]iner'`` could help detect crypto miner-related activity across other systems.
 
 ## Wrapping Up
 
