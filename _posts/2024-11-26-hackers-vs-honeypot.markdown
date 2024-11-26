@@ -7,25 +7,6 @@ categories:
 summary: "A 5-day deployment of a Cowrie honeypot reveals insights into attacker behaviour, including brute force logins, cryptocurrency mining reconnaissance, and valuable Indicators of Compromise (IOCs)."
 ---
 
-<style>
-/* Custom CSS for this post */
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 100%;
-}
-table th, table td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
-img {
-  display: block;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-</style>
-
 Every day, tens of thousands of brute force attacks are launched against servers worldwide, testing the limits of their defences. For those of us new to cybersecurity, these attacks aren't just statistics: they’re a chance to learn. Setting up a honeypot is an invaluable way to go about this.
 
 Honeypots are valuable tools for both experienced security professionals and those, like me, who are new to the field. For seasoned experts, they provide nuanced insights into attacker behaviour and emerging threats, helping refine defensive strategies. For newcomers, honeypots offer a hands-on opportunity to bridge the gap between theoretical knowledge and real-world application in defensive security.
@@ -106,7 +87,7 @@ This table lists the most frequently executed commands, categorised by type and 
 | `uname -s -m`                                        	| 11	| `ps -ef \| grep '[Mm]iner'`   | 6 	|
 | `/ip cloud print`                                    	| 6 	| `ifconfig`                	| 6 	|
 
-This data is perhaps some of the most interesting for me as someone largely new to this field.
+<br>This data is perhaps some of the most interesting for me as someone largely new to this field.
 
 Commands such as `uname -a` and cat `/proc/cpuinfo` provide attackers with detailed system information, including the OS version, kernel, and CPU architecture. This allows them to tailor subsequent attacks or payloads to the server’s specifications. These sorts of commands can be broadly categorised as reconnaissance and system profiling activity. 
 
@@ -189,8 +170,7 @@ The attacker’s actions followed a methodical sequence, progressing from brute 
 - **Timestamp**: 2024-11-21T23:06:07.361658Z  
 - **Event**: The connection was closed after 54 seconds of activity.
 
-
-This sequence of events allows us to paint a picture of the attackers activity within the honeypot from their initial connection to the honeypot until the session was closed. Based on this timeline of events, we're able to put together a fairly comprehensive list of Indicators of Compromise (IOCs):
+<br>This sequence of events allows us to paint a picture of the attackers activity within the honeypot from their initial connection to the honeypot until the session was closed. Based on this timeline of events, we're able to put together a fairly comprehensive list of Indicators of Compromise (IOCs):
 
 ### Indicators of Compromise (IOCs)
 
@@ -215,7 +195,7 @@ This sequence of events allows us to paint a picture of the attackers activity w
 4. **SSH Client Details**:
    - **Version**: `SSH-2.0-libssh2_1.11.0`
 
-<br>These Indicators of Compromise (IOCs) can be integrated into SIEM tools to enhance detection capabilities or shared with threat intelligence networks to bolster community defences. For instance, monitoring for commands like `ps | grep '[Mm]iner'`` could help detect crypto miner-related activity across other systems.
+<br>These Indicators of Compromise (IOCs) can be integrated into SIEM tools to enhance detection capabilities or shared with threat intelligence networks to bolster community defences. For instance, monitoring for commands like `ps | grep '[Mm]iner'` could help detect crypto miner-related activity across other systems.
 
 ## Wrapping Up
 
@@ -226,5 +206,3 @@ For newcomers like me, deploying a honeypot is more than just an educational end
 The data presented in this post is a small piece of the larger puzzle, not only in understanding the data logged by this honeypot specifically, but the cyber landscape as a whole. By sharing these findings, including the Indicators of Compromise and detection techniques, I hope to contribute to the broader conversation about improving security practices. Whether you're a seasoned professional or just starting out, honeypots are a powerful tool for turning theoretical knowledge into actionable insights.
 
 As I continue to explore defensive security, I plan to build on these findings, refining my detection techniques and sharing new discoveries. If you're considering setting up your own honeypot, I encourage you to do so: it’s a hands-on experience that will expand your understanding of both offensive and defensive strategies in cybersecurity.
-
-
