@@ -11,7 +11,7 @@ Every day, tens of thousands of brute force attacks are launched against servers
 
 Honeypots are valuable tools for both experienced security professionals and those, like me, who are new to the field. For seasoned experts, they provide nuanced insights into attacker behaviour and emerging threats, helping refine defensive strategies. For newcomers, honeypots offer a hands-on opportunity to bridge the gap between theoretical knowledge and real-world application in defensive security.
 
-Setting up and running a honeypot is an incredibly educational experience. It requires configuring servers—whether locally or in the cloud—managing system resources, and actively monitoring logs. These technical tasks build foundational skills essential for anyone aspiring to work in system administration or cybersecurity. The process also introduces tools and configurations used to secure systems against potential threats.
+Setting up and running a honeypot is an incredibly educational experience. It requires configuring servers (whether locally or in the cloud), managing system resources, and actively monitoring logs. These technical tasks build foundational skills essential for anyone aspiring to work in system administration or cybersecurity. The process also introduces tools and configurations used to secure systems against potential threats.
 
 Once operational, a honeypot reveals the types of attacks and interactions that a publicly accessible server might encounter. From observing brute force SSH attempts to analysing post-compromise activity, it serves as a controlled environment to study the tactics, techniques, and procedures attackers employ. This real-world exposure transforms abstract cybersecurity concepts into tangible, actionable insights.
 
