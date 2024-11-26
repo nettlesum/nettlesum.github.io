@@ -7,7 +7,7 @@ categories:
 summary: "Analysis and insights from a 5-day deployment of a Cowrie honeypot that reveals attacker behaviour, including brute force logins, cryptocurrency mining reconnaissance, and valuable Indicators of Compromise (IOCs)."
 ---
 
-Every day, tens of thousands of brute force attacks are launched against servers worldwide, testing the limits of their defences. For those of us new to cybersecurity, these attacks aren't just statistics: they’re a chance to learn. Setting up a honeypot is an invaluable way to go about this.
+Every day, tens of thousands of brute force attacks are launched against servers worldwide, testing the limits of their defences. For those of us new to cybersecurity, these attacks aren't just statistics: they’re a chance to learn. Setting up a honeypot is an invaluable way to go about this. This post looks at some of the lessons learned from 5 days of honeypot logs and data.
 
 Honeypots are valuable tools for both experienced security professionals and those, like me, who are new to the field. For seasoned experts, they provide nuanced insights into attacker behaviour and emerging threats, helping refine defensive strategies. For newcomers, honeypots offer a hands-on opportunity to bridge the gap between theoretical knowledge and real-world application in defensive security.
 
