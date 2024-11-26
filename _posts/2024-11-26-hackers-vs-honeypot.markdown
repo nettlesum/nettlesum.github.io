@@ -4,7 +4,7 @@ date: 2024-11-26
 categories:
   - Honeypot Analysis
   - Cybersecurity
-summary: "A 5-day deployment of a Cowrie honeypot reveals insights into attacker behaviour, including brute force logins, cryptocurrency mining reconnaissance, and valuable Indicators of Compromise (IOCs)."
+summary: "Analysis and insights from a 5-day deployment of a Cowrie honeypot that reveals attacker behaviour, including brute force logins, cryptocurrency mining reconnaissance, and valuable Indicators of Compromise (IOCs)."
 ---
 
 Every day, tens of thousands of brute force attacks are launched against servers worldwide, testing the limits of their defences. For those of us new to cybersecurity, these attacks aren't just statistics: they’re a chance to learn. Setting up a honeypot is an invaluable way to go about this.
