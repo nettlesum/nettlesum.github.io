@@ -99,7 +99,7 @@ While much of the command activity indicated reconnaissance, some proved to be m
 
 ## A Closer Look at Cryptocurrency Miners
 
-One of the more intriguing findings from the honeypot logs involved commands targeting potential cryptocurrency mining processes. Specifically, the attacker issued commands such as `ps | grep '[Mm]iner'`` and `ps -ef | grep '[Mm]iner'``. These commands are commonly used to check for processes that might indicate active cryptocurrency mining software running on the system.
+One of the more intriguing findings from the honeypot logs involved commands targeting potential cryptocurrency mining processes. Specifically, the attacker issued commands such as `ps | grep '[Mm]iner'` and `ps -ef | grep '[Mm]iner'`. These commands are commonly used to check for processes that might indicate active cryptocurrency mining software running on the system.
 
 In this particular case, the attacker connected from the IP address `220.88.51.XXX` (geolocated to Korea) and successfully logged in using the credentials `root:12345`. Once inside, the attacker executed reconnaissance commands like `uname -a` and `cat /proc/cpuinfo`, presumably to profile the system and determine its suitability for running mining operations. The repeated use of commands to list and search for active processes, such as `ps | grep '[Mm]iner'`, indicates a specific intent to identify any existing mining activities.
 
