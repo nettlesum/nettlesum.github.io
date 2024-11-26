@@ -43,13 +43,18 @@ The honeypot was configured to accept **33 distinct username/password combinatio
 
 This table lists the most frequently attempted username and password combinations observed during the honeypot’s operation. The credentials range from default IoT device logins to common weak passwords, reflecting the tactics attackers often employ in brute force attacks.
 
-| Username | Password    	| Attempts | Username | Password    	| Attempts |
-|----------|-----------------|----------|----------|-----------------|----------|
-| admin	| admin       	| 146  	| root 	| 123         	| 32   	|
-| root 	| root        	| 51   	| root 	| 1           	| 30   	|
-| support  | support     	| 48   	| root 	| 12345       	| 26   	|
-| root 	| admin       	| 43   	| pi   	| raspberry   	| 25   	|
-| root 	| 123456      	| 41   	| system   | OkwKcECs8qJP2Z  | 41   	|
+| Username | Password        | Attempts |
+|----------|-----------------|----------|
+| admin    | admin           | 146      |
+| root     | 123             | 32       |
+| root     | root            | 51       |
+| root     | 1               | 30       |
+| support  | support         | 48       |
+| root     | 12345           | 26       |
+| root     | admin           | 43       |
+| pi       | raspberry       | 25       |
+| root     | 123456          | 41       |
+| system   | OkwKcECs8qJP2Z  | 41       |
 
 <br>When looking at both succesful and unsuccesful login attempts we can demonstrate the sheer volume of login attempts quite effectively.
 
@@ -63,13 +68,18 @@ While country-based attribution using IP addresses can be misleading, it still o
 
 ### Events by Country
 
-| Country    	| Number of Events | Country    	| Number of Events |
-|----------------|-------------------|----------------|-------------------|
-| China      	| 92           	| Australia  	| 10           	|
-| United States  | 88           	| Hong Kong  	| 10           	|
-| Netherlands	| 22           	| Russia     	| 8            	|
-| India      	| 16           	| Brazil     	| 8            	|
-| Germany    	| 11           	| Korea      	| 8            	|
+| Country         | Number of Events |
+|-----------------|------------------|
+| China           | 92               |
+| United States   | 88               |
+| Netherlands     | 22               |
+| India           | 16               |
+| Germany         | 11               |
+| Australia       | 10               |
+| Hong Kong       | 10               |
+| Russia          | 8                |
+| Brazil          | 8                |
+| Korea           | 8                |
 
 ## Command Execution Data
 
@@ -79,13 +89,18 @@ While the honeypot was active, 248 commands were executed by attackers who were 
 
 This table lists the most frequently executed commands, categorised by type and purpose
 
-| Command                                            	| Count | Command                 	| Count |
-|----------------------------------------------------------|-------|-------------------------------|-------|
-| `uname -s -v -n -r -m`                               	| 97	| `uname -a`                	| 6 	|
-| `apt`                                                	| 14	| `cat /proc/cpuinfo`       	| 6 	|
-| `sh;shell;su;enable;ping;cd /tmp \|\| cd /var/run \|\| cd /mnt \|\| cd /root \|\| cd /;cd...` | 12	| `ps \| grep '[Mm]iner'`   	| 6 	|
-| `uname -s -m`                                        	| 11	| `ps -ef \| grep '[Mm]iner'`   | 6 	|
-| `/ip cloud print`                                    	| 6 	| `ifconfig`                	| 6 	|
+| Command                                               | Count |
+|-------------------------------------------------------|-------|
+| `uname -s -v -n -r -m`                                | 97    |
+| `apt`                                                 | 14    |
+| `sh;shell;su;enable;ping;cd /tmp \|\| cd /var/run \|\| cd /mnt \|\| cd /root \|\| cd /;cd...` | 12    |
+| `uname -s -m`                                         | 11    |
+| `/ip cloud print`                                     | 6     |
+| `uname -a`                                            | 6     |
+| `cat /proc/cpuinfo`                                   | 6     |
+| `ps \| grep '[Mm]iner'`                               | 6     |
+| `ps -ef \| grep '[Mm]iner'`                           | 6     |
+| `ifconfig`                                            | 6     |
 
 <br>This data is perhaps some of the most interesting for me as someone largely new to this field.
 
