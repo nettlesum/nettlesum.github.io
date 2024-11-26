@@ -33,7 +33,7 @@ Key metrics from this period include:
 
 The 7,586 failed logins during a 5-day period underscore the relentless nature of brute force attacks, often automated and distributed across botnets. Similarly, the 106 unique IPs observed suggest a global distribution of sources, displaying just how broad of an attack surface exposed systems can face.
 
-These figures highlight the volume and variety of interactions a single exposed server can attract, offering valuable insights into real-world attack patterns.
+These figures highlight the volume and variety of interactions a single exposed server can attract. This offers valuable insights into real-world attack patterns.
 
 ## Username & Password Data
 
